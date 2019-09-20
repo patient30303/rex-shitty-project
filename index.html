@@ -615,7 +615,6 @@
                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
 
-                        onclick="usersignup()"
                         <div class="modal-footer">
                             <button type="submit" class="btn btn-warning usersend" id="loginBtn" 
                                 >
@@ -644,76 +643,72 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <form class="needs-validation" novalidate>
+                    <form class="needs-validation" id="signupForm"  novalidate>
                         <div class="row mt-sm-2">
                             <div class="col-md-6">
 
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="text" name="" id="email" class="form-control text-white email" placeholder="Please enter your email" aria-describedby="helpId" required>
-                                    <div class="invalid-feedback">
-                                        Please enter a valid email address
-                                    </div>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                    <a href="#"><small id="helpId" class="text-primary">Need Help?</small></a>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" name="" id="email" class="form-control text-white email" placeholder="Please enter your email" aria-describedby="helpId" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address
                                 </div>
-
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="text" name="" id="password" class="form-control text-white password" placeholder="Please enter your password" aria-describedby="helpId" required>
-                                    <div class="invalid-feedback">
-                                        Please enter a valid password
-                                    </div>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                    <a href="#"><small id="helpId" class="text-primary">Need Help?</small></a>
+                                <div class="valid-feedback">
+                                    Looks good!
                                 </div>
-
-                                <div class="form-group">
-                                    <label for="password">Confirm Password</label>
-                                    <input type="text" name="" id="password" class="form-control text-white password" placeholder="Please enter your password again" aria-describedby="helpId" required>
-                                    <a href="#"><small id="helpId" class="text-primary">Need Help?</small></a>
-                                    <div class="invalid-feedback">
-                                        Please enter a valid password
-                                    </div>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-
-                                <div class="form-check form-check-block">
-                                    <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue" required> Check with me
-                                    <div class="invalid-feedback">
-                                        Please choose
-                                    </div>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </label>
-
-                                </div>
-                                <small class="text-muted ">When you create a account, you provide us with personal information that includes your name and a password. You can also choose to add a phone number or payment information to your account. Even if you aren’t signed in to a  Account, you might choose to provide us with information — like an email address to receive updates about our services.</small>
+                                <a href="#"><small id="helpId" class="text-primary">Need Help?</small></a>
                             </div>
 
-
-                            <div class="col-md-6 col-sm-12">
-
-                                <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xPPLbEFbCAo?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="text" name="" id="password" class="form-control text-white password" placeholder="Please enter your password" aria-describedby="helpId" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid password
                                 </div>
-
-
-                                <div class="modal-footer" style="border:0px;">
-                                    <button type="submit" class="btn btn-warning send" onclick="signup()">Create Account</button>
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-
+                                <div class="valid-feedback">
+                                    Looks good!
                                 </div>
+                                <a href="#"><small id="helpId" class="text-primary">Need Help?</small></a>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Confirm Password</label>
+                                <input type="text" name="" id="password" class="form-control text-white password" placeholder="Please enter your password again" aria-describedby="helpId" required>
+                                <a href="#"><small id="helpId" class="text-primary">Need Help?</small></a>
+                                <div class="invalid-feedback">
+                                    Please enter a valid password
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <div class="form-check form-check-block">
+                                <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue" required> Check with me
+                                <div class="invalid-feedback">
+                                    Please choose
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </label>
 
                             </div>
+                            <small class="text-muted ">When you create a account, you provide us with personal information that includes your name and a password. You can also choose to add a phone number or payment information to your account. Even if you aren’t signed in to a  Account, you might choose to provide us with information — like an email address to receive updates about our services.
+                            </small>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12">
+                            <div class="embed-responsive embed-responsive-4by3">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xPPLbEFbCAo?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="modal-footer" style="border:0px;">
+                                <button type="submit" class="btn btn-warning send">Create Account</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </form>
                     </div>
 

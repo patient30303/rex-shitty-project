@@ -1,6 +1,11 @@
 var send = document.querySelector(".send");
 
-function signup() {
+// Sign up process
+document.getElementById("signupForm").addEventListener("submit", signup);
+function signup(event) {
+  event.preventDefault();
+  event.stopPropagation();
+
   var emailStr = document.querySelector(".email").value;
   var passwordStr = document.querySelector(".password").value;
   var account = {};
@@ -33,9 +38,8 @@ function signup() {
 //DOM
 var usersend = document.querySelector(".usersend");
 
-//signup process//
+// Login process
 document.getElementById("loginForm").addEventListener("submit", usersignup);
-
 function usersignup(event) {
   event.preventDefault();
   event.stopPropagation();
